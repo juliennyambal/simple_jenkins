@@ -1,7 +1,11 @@
-import fire
+def addition(x, y):
+    return x + y
 
-def hello(name="World"):
-  return "Hello %s!" % name
+def multiplication(x, y):
+    return x * y
 
-if __name__ == '__main__':
-  fire.Fire(hello)
+def division(x, y):
+    return x / y
+
+def subtraction(x, y):
+    return x - y
