@@ -20,7 +20,11 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Testing.."
-                sh "python3 -m pytest"
+
+                sh '''
+                cd myapp
+                python3 -m pytest
+                '''
             }
         }
         stage('Deliver') {
