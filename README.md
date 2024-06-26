@@ -17,6 +17,13 @@ You should be able by now to install things with the documentation. Once you are
 
 You can choose between a **Freestyle** or a **Pipeline** project. 
 
+### Create a Freestyle Project
+
+- From the Jenkins welcome page, on the left corner click on **New Item**
+- Enter the name of the project
+- Click on **Freestyle Project**
+- Click on **OK**
+
 ```
 ## Create a cloud agent (Docker)
 
