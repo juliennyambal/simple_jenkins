@@ -52,7 +52,7 @@ You can choose between a **Freestyle** or a **Pipeline** project.
 - Save and **Build Now**. Or because of **Poll SCM**, the build will get triggered after a change in the Git repository happens
 
 ## Create a cloud agent (Docker)
-```
+
 To run agent docker master node: 
 
 https://stackoverflow.com/questions/47709208/how-to-find-docker-host-uri-to-be-used-in-jenkins-docker-plugin
