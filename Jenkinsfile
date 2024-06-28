@@ -9,7 +9,7 @@ pipeline {
                 echo "Pulling repo.."
                 sh '''
                 git clone https://github.com/juliennyambal/simple_jenkins.git
-				cd add
+				cd myapp
                 '''
             }
         }
@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo "Virtual Environment.."
                 sh '''
-				cd add
+				cd myapp
                 python3 -m venv jenkins_venv
 				. ./jenkins_venv/bin/activate
                 pip install -r requirements.txt
@@ -29,7 +29,7 @@ pipeline {
                 echo "Testing.."
 
                 sh '''
-                cd add
+                cd myapp
                 . ./jenkins_venv/bin/activate
                 python3 -m pytest
                 '''
