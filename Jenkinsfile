@@ -10,7 +10,9 @@ pipeline {
                 sh '''
                 FOLDER="simple_jenkins"
                 URL="https://github.com/juliennyambal/simple_jenkins.git"
-                git clone "$URL"
+                if [ ! -d "$FOLDER" ] ; then
+                    git clone "$URL"
+                fi
 				cd myapp
                 '''
             }
