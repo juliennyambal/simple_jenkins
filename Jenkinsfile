@@ -35,7 +35,7 @@ pipeline {
                 sh '''
                 cd myapp
                 . ./jenkins_venv/bin/activate
-                python3 -m pytest
+                python3 -m pytest -v
                 '''
             }
         }
