@@ -8,7 +8,9 @@ pipeline {
             steps {
                 echo "Pulling repo.."
                 sh '''
-                git clone https://github.com/juliennyambal/simple_jenkins.git
+                FOLDER="simple_jenkins"
+                URL="https://github.com/juliennyambal/simple_jenkins.git"
+                git clone "$URL"
 				cd myapp
                 '''
             }
